@@ -11,8 +11,8 @@ for file_name in list_of_files:
 
     name,extension=os.path.splitext(file_name)
 
-if extension=='':
-    continue
+    if extension=='':
+        continue
 if extension in ['.gif','.png','.jpg','jpeg','.jfif']:
 
     path1=from_dir+'/'+file_name
